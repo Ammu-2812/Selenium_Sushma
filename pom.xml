@@ -59,7 +59,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						
-						<suiteXmlFile>DDT.xml</suiteXmlFile>
+						<suiteXmlFile>sequence.xml</suiteXmlFile>
 						
 					</suiteXmlFiles>
 				</configuration>
