@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DDTSample]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="day4.ReadingData">
+        <methods>
+          <include name="setup"/>
+          <include name="Clearup"/>
+          <include name="Test" invocation-numbers="3 4"/>
+        </methods>
+      </class> <!-- day4.ReadingData -->
+      <class name="day4.DDTExample">
+        <methods>
+          <include name="Test" invocation-numbers="3"/>
+          <include name="Clearup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- day4.DDTExample -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [DDTSample] -->

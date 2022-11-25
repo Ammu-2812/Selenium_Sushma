@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Stack" thread-count="5"  parallel="tests">
+  <test name="TestChrome">
+  <parameter name="os" value="windows"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="105"/>
+    <classes>
+      <class name="day5.BrowserStackDevice"/>
+    </classes>  
+ 
+  </test> <!-- Test -->
+  <test  name="TestFirefox" >
+  <parameter name="os" value="windows"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="browserVersion" value="latest"/>
+    <classes>
+      <class name="day5.BrowserStackDevice"/>
+    </classes>  
+    
+    </test> <!-- Test -->
+  <test  name="TestEdge" >
+  <parameter name="os" value="windows"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="browser" value="Edge"/>
+  <parameter name="browserVersion" value="100"/>
+    <classes>
+      <class name="day5.BrowserStackDevice"/>
+    </classes>
+    
+     </test> <!-- Test -->
+  <test  name="TestMac" >
+  <parameter name="os" value="OS X"/>
+  <parameter name="osVersion" value="Ventura"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="16.0"/>
+    <classes>
+      <class name="day5.BrowserStackDevice"/>
+    </classes>
+    
+     </test> <!-- Test -->
+  <test  name="TestMacFirefox" >
+  <parameter name="os" value="OS X"/>
+  <parameter name="osVersion" value="Ventura"/>
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="browserVersion" value="16.0"/>
+    <classes>
+      <class name="day5.BrowserStackDevice"/>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Stack -->

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Stack]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestMacFirefox(failed)">
+    <parameter name="os" value="Mac"/>
+    <parameter name="osVersion" value="latest"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="browserVersion" value="100"/>
+    <classes>
+      <class name="day5.BrowserStackDevice">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testingOnWindows"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- day5.BrowserStackDevice -->
+    </classes>
+  </test> <!-- TestMacFirefox(failed) -->
+  <test thread-count="5" parallel="tests" name="TestMac(failed)">
+    <parameter name="os" value="Mac"/>
+    <parameter name="osVersion" value="latest"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="102"/>
+    <classes>
+      <class name="day5.BrowserStackDevice">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testingOnWindows"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- day5.BrowserStackDevice -->
+    </classes>
+  </test> <!-- TestMac(failed) -->
+</suite> <!-- Failed suite [Stack] -->
